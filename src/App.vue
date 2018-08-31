@@ -185,8 +185,5 @@ export default {
 }
 </script>
 
-<style>
-@import "tailwindcss/preflight";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+<style lang="scss" rel="stylesheet/scss">
 </style>

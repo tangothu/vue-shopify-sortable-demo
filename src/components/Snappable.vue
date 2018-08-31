@@ -1,6 +1,5 @@
 <script>
   import {Swappable, Plugins} from '@shopify/draggable';
-  console.log(Swappable);
 
   export default {
     props: {
