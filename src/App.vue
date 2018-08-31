@@ -2,39 +2,174 @@
   <div id="app" class="min-h-screen text-black bg-grey-lighter p-8">
     <div class="bg-white rounded shadow-lg max-w-md mx-auto py-8 px-4">
 
-      <sortable-list v-model="todos">
-        <ul class="list-reset" slot-scope="{ items }">
-          <sortable-item v-for="todo in items" :key="todo.id">
-            <li class="bg-white px-4">
-              <div class="flex items-center border-b border-grey-lighter">
-                <div class="flex-grow flex items-center py-4">
-                  <input type="checkbox" v-model="todo.complete" class="mr-3">
-                    <span>{{ todo.description }}</span>
-                </div>
-                  <sortable-handle>
-                    <svg class="ml-2 h-4 w-4 cursor-move text-grey hover:text-grey-darkest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M14 4h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM8 4h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm6 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm-6 0h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm-6 0h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"/></svg>
-                  </sortable-handle>
-              </div>
-            </li>
-          </sortable-item>
-        </ul>
-      </sortable-list>
+      <snappable>
+        <section id="Snappable" class="Snappable">
+           <div>
+              <article class="BlockLayout BlockLayout--typeGrid--External" tabindex="0">
+                 <div class="BlockWrapper">
+                    <a href="#" class="Block Block--item100 Block--isDraggable draggable-source" title="Click to drag" style="">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">External Event 1</h3>
+                          <div class="Pattern Pattern--typeHalftone"></div>
+                          <div class="Pattern Pattern--typePlaced"></div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="BlockWrapper">
+                    <a href="#" class="Block Block--item101 Block--isDraggable draggable-source" title="Click to drag" style="">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">External Event 2</h3>
+                          <div class="Pattern Pattern--typeHalftone"></div>
+                          <div class="Pattern Pattern--typePlaced"></div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeStripes Block--item103 draggable-source" tabindex="0">
+                       <div class="BlockContent"></div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <a href="#" class="Block Block--item104 Block--isDraggable draggable-source" title="Click to drag">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">External Event 4</h3>
+                          <div class="Pattern Pattern--typeHalftone"></div>
+                          <div class="Pattern Pattern--typePlaced"></div>
+                       </div>
+                    </a>
+                 </div>
+              </article>
+           </div>
+           <div>
+              <article class="BlockLayout BlockLayout--typeGrid" tabindex="0">
+                 <div class="BlockWrapper">
+                    <a href="#" class="Block Block--item1 Block--isDraggable draggable-source" title="Click to drag">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">Event 1</h3>
+                          <div class="Pattern Pattern--typeHalftone"></div>
+                          <div class="Pattern Pattern--typePlaced"></div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--item2">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">Event 2</h3>
+                       </div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeStripes Block--item3 draggable-source" tabindex="0">
+                       <div class="BlockContent"></div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeStripes Block--item4 draggable-source" tabindex="0">
+                       <div class="BlockContent"></div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--item5">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">Event 5</h3>
+                       </div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeStripes Block--item6 draggable-source" tabindex="0">
+                       <div class="BlockContent"></div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <a href="#" class="Block Block--item7 Block--isDraggable draggable-source" title="Click to drag">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">Event 7</h3>
+                          <div class="Pattern Pattern--typeHalftone"></div>
+                          <div class="Pattern Pattern--typePlaced"></div>
+                       </div>
+                    </a>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--item8">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">Event 8</h3>
+                       </div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeStripes Block--item9 draggable-source" tabindex="0">
+                       <div class="BlockContent"></div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--item10">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">Event 10</h3>
+                       </div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeStripes Block--item11 draggable-source" tabindex="0">
+                       <div class="BlockContent"></div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <a href="#" class="Block Block--item12 Block--isDraggable draggable-source" title="Click to drag">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">Event 12</h3>
+                          <div class="Pattern Pattern--typeHalftone"></div>
+                          <div class="Pattern Pattern--typePlaced"></div>
+                       </div>
+                    </a>
+                 </div>
+              </article>
+           </div>
+           <div>
+              <article class="BlockLayout BlockLayout--typeGrid--TimeSlot" tabindex="0">
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeHollow">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">8:00AM - 11:00AM</h3>
+                       </div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeHollow">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">11:00AM - 2:00PM</h3>
+                       </div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeHollow">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">2:00PM - 5:00PM</h3>
+                       </div>
+                    </span>
+                 </div>
+                 <div class="BlockWrapper">
+                    <span class="Block Block--typeHollow">
+                       <div class="BlockContent">
+                          <h3 class="Heading Heading--size4 text-no-select">5:00PM - 8:00PM</h3>
+                       </div>
+                    </span>
+                 </div>
+              </article>
+           </div>
+        </section>
+      </snappable>
 
     </div>
   </div>
 </template>
 
 <script>
-import SortableList from './components/SortableList'
-import SortableItem from './components/SortableItem'
-import SortableHandle from './components/SortableHandle'
+import Snappable from './components/Snappable'
 
 export default {
   name: 'app',
   components: {
-    SortableList,
-    SortableItem,
-    SortableHandle,
+    'snappable': Snappable,
   },
   data() {
     return {
