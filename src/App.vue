@@ -16,10 +16,10 @@
                     </a>
                  </div>
                  <div class="BlockWrapper">
-                     <vue-draggable-resizable :parent="true" :grid="[0,100]" :z="999">
+                     <vue-draggable-resizable class="snap-resizable" :parent="true" :grid="[0,100]" :z="999" :w="396">
                         <a href="#" class="Block Block--item101 Block--isDraggable draggable-source" title="Click to drag" style="">
                               <div class="BlockContent">
-                                    <h3 class="Heading Heading--size4 text-no-select">External Event 1</h3>
+                                    <h3 class="Heading Heading--size4 text-no-select">External Event 2</h3>
                                     <div class="Pattern Pattern--typeHalftone"></div>
                                     <div class="Pattern Pattern--typePlaced"></div>
                               </div>
@@ -194,6 +194,6 @@ export default {
 
 .snap-resizable {
     height: auto;
-    width: 200px;
+    width: auto;
 }
 </style>
