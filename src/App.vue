@@ -186,4 +186,5 @@ export default {
 </script>
 
 <style lang="scss" rel="stylesheet/scss">
+@import './assets/css/examples-app.css';
 </style>
