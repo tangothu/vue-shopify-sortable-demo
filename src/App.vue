@@ -22,6 +22,9 @@
                           <div class="Pattern Pattern--typeHalftone"></div>
                           <div class="Pattern Pattern--typePlaced"></div>
                        </div>
+                       <vue-draggable-resizable class="BlockContent" :parent="true" :grid="[25,25]">
+                          <p>You can snap me on a grid.</p>
+                       </vue-draggable-resizable>
                     </a>
                  </div>
                  <div class="BlockWrapper">
@@ -165,11 +168,13 @@
 
 <script>
 import Snappable from './components/Snappable'
+import VueDraggableResizable from 'vue-draggable-resizable'
 
 export default {
   name: 'app',
   components: {
     'snappable': Snappable,
+    'vue-draggable-resizable': VueDraggableResizable
   },
   data() {
     return {
