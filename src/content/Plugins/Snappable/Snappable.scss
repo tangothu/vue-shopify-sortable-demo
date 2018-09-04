@@ -1,0 +1,42 @@
+////
+/// Content
+/// Snappable
+////
+
+@import 'utils/shared/functions';
+
+.Snappable {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 40px;
+
+
+  div > .BlockLayout--typeGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, rows(3));
+
+    @media screen and (min-width: get-breakpoint(tablet)) {
+      grid-template-columns: repeat(3, 0.5fr);
+    }
+
+    @media screen and (min-width: get-breakpoint(desktop)) {
+
+    }
+  }
+
+  div > .BlockLayout--typeGrid--External {
+    @extend .BlockLayout--typeGrid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  div > .BlockLayout--typeGrid--TimeSlot {
+    @extend .BlockLayout--typeGrid--External;
+
+    div {
+      border-bottom: 1px solid black;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
